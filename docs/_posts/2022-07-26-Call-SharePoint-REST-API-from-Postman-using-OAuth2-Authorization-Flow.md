@@ -19,25 +19,32 @@ In this Article, You'll learn how to **Call SharePoint REST API** from Postman u
 ### Implementation Steps:
 
 1. Register an application in Azure AD
-1. Build HTTP Request in Postman to Obtain OAuth2 access token and call
-1. Send HTTP Request to SharePoint with OAuth2 access Token from Postman
+
+2. Build HTTP Request in Postman to Obtain OAuth2 access token and call
+
+3. Send HTTP Request to SharePoint with OAuth2 access Token from Postman
 
 #### Step 1: Register an application in Azure AD
 1. Go to Azure AD (Azure Subscription linked to the Azure AD used by your Office 365 tenant)
-1. Select App Registration > New Registration > Fill out the form
-
-![screenshot](https://vstudio365.github.io/assets/screenshots/app-registration-form-01.jpg)
-
-1. Generate Secret
-1. Set Permission
+2. Select App Registration > New Registration > Fill out the form
+> 
+> Name: {friendly-name}
+>
+> Supported account types: {.. Single tenant}
+>
+> Redirect URI: {Web} - {https://oauth.pstmn.io/v1/callback} (redirect to postman tool on successful authentication)
+>
+![screenshot](/assets/screenshots/app-registration-form-01.jpg)
+3. Generate Secret
+4. Set Permission
         API Permissions > Add a Permission > SharePoint > Application Permissions > Select Sites.FullControl.All (or as required) > Add Permissions
 
 #### Step 2: Build HTTP Request in Postman to Obtain OAuth2 access token and call
 
 1. Go to **Postman**
 1. Create HTTP Request
-1. Go to **Authorization** tab, select **Oauth 2.0** and fill values as below and click on **Get New Access Token**
-1. After Authentication Complete, click proceed > Use Token
+3. Go to **Authorization** tab, select **Oauth 2.0** and fill values as below and click on **Get New Access Token**
+4. After Authentication Complete, click proceed > Use Token
 
 #### Step 3: Send HTTP Request to SharePoint with OAuth2 access Token from Postman
 
