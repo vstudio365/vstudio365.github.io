@@ -26,7 +26,7 @@ In this Article, You'll learn how to **Call SharePoint REST API** from Postman u
 1. Go to Azure AD (Azure Subscription linked to the Azure AD used by your Office 365 tenant)
 1. Select App Registration > New Registration > Fill out the form
 
-![screenshot](https://vstudio365.github.io/blog/assets/screenshots/app-registration-form-01.jpg)
+![screenshot](https://vstudio365.github.io/assets/screenshots/app-registration-form-01.jpg)
 
 1. Generate Secret
 1. Set Permission
