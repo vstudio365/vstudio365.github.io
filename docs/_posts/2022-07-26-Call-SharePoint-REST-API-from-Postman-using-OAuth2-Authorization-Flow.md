@@ -1,5 +1,6 @@
 ---
 title: "How to Call SharePoint REST API from Postman using OAuth2 Authorization Flow"
+description: "How to Call SharePoint REST API from Postman using OAuth2 Authorization Flow"
 layout: post
 author: "venkadesh"
 categories: sharepoint
