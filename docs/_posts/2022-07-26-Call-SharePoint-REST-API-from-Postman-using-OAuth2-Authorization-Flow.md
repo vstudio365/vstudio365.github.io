@@ -3,7 +3,7 @@ title: "How to Call SharePoint REST API from Postman using OAuth2 Authorization 
 description: "How to Call SharePoint REST API from Postman using OAuth2 Authorization Flow"
 layout: post
 author: "venkadesh"
-categories: sharepoint
+category: sharepoint
 ---
 
 In this Article, we'll walkthrough how to **Call SharePoint REST API** from Postman using **OAuth2 Authorization Flow**
@@ -48,29 +48,41 @@ In this Article, we'll walkthrough how to **Call SharePoint REST API** from Post
 >![screenshot](/assets/screenshots/article001/article001-create-http-request.png)
 1. Build HTTP Request : Fill Verb, Url and headers
 >![screenshot](/assets/screenshots/article001/article001-request-headers.png)
+>
 > - HTTP Method : GET
 > - HTTP Request : \<site-url>/_api/web/lists
 > - Headers :-   Accept : application/json;odata=verbose
 1. Go to **Authorization** tab, select **Oauth 2.0** in type field
 1. Navigate to **Configure New Token** and fill values as below and click on **Get New Access Token**
 >![screenshot](/assets/screenshots/article001/article001-authorization-data.png)
+>
 > - Token Name: \<friendly name>
 > - Grant Type: Authorization Code
 > - Callback URL: https://oauth.pstmn.io/v1/callback
 > - Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https%3A%2F%2F\<tenant_name>.sharepoint.com  (refer tenant name from SharePoint Site URL)
 > - Access Token URL: https://login.microsoftonline.com/common/oauth2/token  
 > - Client ID: \<client ID>  (copied from Step #1 point #3)
-> - Client Secret: \<KEY>  (copied from Step #1 point #5)
+> - Client Secret: \<secret>  (copied from Step #1 point #5)
 > - Scope: \<Leave empty>
 > - State : \<Leave empty>
 >
-> note: user will be prompted to fill username & password
-4. After Authentication Complete, click proceed > Use Token
+> Note: user will be prompted to fill username & password
+4. After Authentication, click proceed > Use Token
 >![screenshot](/assets/screenshots/article001/article001-refer-access-token.png)
 
 #### Step 3: Send HTTP Request to SharePoint with OAuth2 access Token from Postman
 
 1. Click Send
 >![screenshot](/assets/screenshots/article001/article001-send-request.png)
-1. Check reponse from SharePoint
+1. Check response from SharePoint :) :)
 >![screenshot](/assets/screenshots/article001/article001-http-response.png)
+
+
+
+
+## Summary
+
+- We've learnt to sent HTTP request and get response from SharePoint REST API. 
+- We can form the REST URL as per use case and use this approach to get data from SharePoint
+- In this, we've used OAuth2 Authorization flow to authenticate and there are other ways to authenticate as well. Refer [app-only access to SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azuread)
+- It is recommended to use Graph API to make SharePoint REST calls [SharePoint REST operations via the Microsoft Graph REST API](https://docs.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)
