@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: VStudio365 Blog
+title: Blog by VStudio365
 author: Venkadesh Sundaramurthy
 permalink: /:title/
 lang: "en"
@@ -26,7 +26,6 @@ excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 email: venkadesh.sundaramoorthy@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- Place to share work experience around SharePoint, Office365, Graph API, Azure, Power Platform
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
