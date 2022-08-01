@@ -86,4 +86,4 @@ In this Article, we'll walkthrough how to **Call SharePoint REST API** from Post
 - We've learnt to sent HTTP request and get response from SharePoint REST API. 
 - We can form the REST URL as per use case and use this approach to get data from SharePoint
 - In this, we've used OAuth2 Authorization flow to authenticate and there are other ways to authenticate as well. Refer [app-only access to SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azuread)
-- It is recommended to use Graph API to make SharePoint REST calls [SharePoint REST operations via the Microsoft Graph REST API](https://docs.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)
+- SharePoint REST API used in this approach but it's recommended to use Graph API to make SharePoint REST calls [SharePoint REST operations via the Microsoft Graph REST API](https://docs.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)
