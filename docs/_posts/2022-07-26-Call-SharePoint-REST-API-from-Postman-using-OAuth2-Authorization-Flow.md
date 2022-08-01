@@ -4,6 +4,7 @@ description: "How to Call SharePoint REST API from Postman using OAuth2 Authoriz
 layout: post
 author: "venkadesh"
 category: sharepoint
+comment_id: 1
 ---
 
 In this Article, we'll walkthrough how to **Call SharePoint REST API** from Postman using **OAuth2 Authorization Flow**
