@@ -7,7 +7,7 @@ category: MSTeams GraphAPI
 comment_id: 2
 ---
 
-In this Article, we'll walkthrough how to get **Microsoft Teams ID** from Graph Explorer using **Graph API**
+In this Article, we'll walkthrough how to get **Microsoft Teams ID** using **Graph API** from Graph Explorer
 
 
 ## Steps:
