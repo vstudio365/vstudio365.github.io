@@ -23,10 +23,10 @@ In this Article, we'll walkthrough how to get **Microsoft Teams ID** using **Gra
 
 ## Note:
 - Incase of **Forbidden error** thrown by Graph API, find the missing permission from the error message. In this case, consider **Team.ReadBasic.All** (or other pemission as you prefer)
-> - ![screenshot](/assets/screenshots/article002/forbidden-error-text.png)
+> ![screenshot](/assets/screenshots/article002/forbidden-error-text.png)
 
 - Navigate to **Modify Permissions (Preview)** Tab > (consider Team.ReadBasic.All for this scenario) click **consent** 
-> - ![screenshot](/assets/screenshots/article002/permission-consented.png)
+> ![screenshot](/assets/screenshots/article002/permission-consent-part.png)
 
 ## Summary
 
