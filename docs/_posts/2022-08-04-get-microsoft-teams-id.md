@@ -7,13 +7,13 @@ category: MSTeams GraphAPI
 comment_id: 2
 ---
 
-In this Article, we'll walkthrough how to get **Microsoft Teams ID** using **Graph API** from Graph Explorer
+In this Article, we'll walkthrough how to get **Microsoft Teams ID** using **Graph API** in Graph Explorer
 
 
 ## Steps:
 
 1. Go to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-1. Login with **Microsoft Account** (which is used for login to Microsoft Teams)
+1. Sign in with your user credentials (which is used for sign in to Microsoft Teams)
 1. Fill the details as mentioned below and click **Run query**.
 > - HTTP Method : GET
 > - Version : v1.0

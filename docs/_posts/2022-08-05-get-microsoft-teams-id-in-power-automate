@@ -1,0 +1,47 @@
+---
+title: "Power Automate: Create Microsoft Teams by cloning existing Teams using Microsoft Graph API"
+description: "Power Automate: Create Microsoft Teams by cloning existing Teams using Microsoft Graph API"
+layout: post
+author: "venkadesh Sundaramurthy"
+category: MSTeams GraphAPI PowerAutomate
+---
+
+In this Article, we'll walkthrough how to **Create Microsoft Teams** using **Microsoft Graph API** through Power Automate
+
+### Services Used:
+
+* Power Automate
+* Microsoft Teams
+* Graph API
+
+### Implementation Steps:
+
+1. Create Team (which act as Template)
+1. Register an application in Azure AD and add Teams/Group Permissions
+1. Create Power Automate to write logic
+1. Clone Teams using Graph API
+
+#### Step 1: Register an application in Azure AD and add Teams/Group Permission
+1. Go to [Azure AD](https://aad.portal.azure.com/)
+1. Select **App Registration** > New Registration > Fill out the form
+>![screenshot](/assets/screenshots/article003/app-registration.png)
+1. Copy **Client ID** and **Tenant ID** for later use
+>![screenshot](/assets/screenshots/article003/grab-app-details.png)
+1. Generate Secret: **Certificates & Secrets** > New Client Secret > Fill Description > Add
+>![screenshot](/assets/screenshots/article003/generate-secret.png)
+1. Copy Secret (It won't be visible later. So, note down for later use)
+>![screenshot](/assets/screenshots/article003/copy-app-secret.png)
+1. Select target API to add Permission: **API Permissions** > Add a Permission > Microsoft Graph
+> ![screenshot](/assets/screenshots/article003/select-api-type.jpg)
+1. Add Permission: **Application Permissions** > (scroll down to Groups)Select Group.ReadWrite.All > Add Permissions
+> ![screenshot](/assets/screenshots/article003/select-permission.jpg)
+1. Grant Consent: Click 'Grant admin consent for \<tenant ID>' (Status should turn to green)
+> ![screenshot](/assets/screenshots/article003/grant-consent.jpg)
+
+#### Step 2: Create PowerAutomate to write logic
+1. Go to Power Automate maker portal : Go to [Microsoft365 portal](www.office.com) > Select Power Automate
+> ![screenshot](/assets/screenshots/article003/select-power-automate.jpg)
+1. 
+1.
+1. Create Trigger Input Parameter: Add Input > Select Text > Teams Template Name, New Teams Name
+1. Click New Step > 
