@@ -8,6 +8,7 @@ category: sharepoint
 
 In this Article, we'll walkthrough how to **Call SharePoint REST API** from Postman using **OAuth2 Authorization Flow**
 
+
 ### Prerequisites:
 
 * SharePoint Site Collection in [M365 Tenant](https://www.office.com/)
