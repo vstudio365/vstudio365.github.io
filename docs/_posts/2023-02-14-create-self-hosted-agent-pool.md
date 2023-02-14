@@ -8,6 +8,7 @@ category: AzureDevops
 
 In this Article, we'll walkthrough how to **Create Self hosted agent pool** in Azure Devops
 
+
 ### Prerequisites:
 * Azure Devops Account
 * Created Devops Project
@@ -29,8 +30,8 @@ In this Article, we'll walkthrough how to **Create Self hosted agent pool** in A
 
 #### Step 2: Add agent
 1. Select newly created Agent Pool
-2. Navigate to **Agents** tab > click **New Agent**
-3. Follow the Instructions as described
+1. Navigate to **Agents** tab > click **New Agent**
+1. Follow the Instructions as described
 > - Click Download button
 > - Create the agent using following command
 > - PS C:\> mkdir agent ; cd agent
